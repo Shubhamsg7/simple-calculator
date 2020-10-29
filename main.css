@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+Pro:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #17202A;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.calculator{
+    position: relative;
+    display: grid;
+    padding: 15px;
+    border-radius: 10px;
+    background: #17202A;
+    box-shadow:  6px 6px 8px #090d11, 
+             -6px -6px 8px #253343;
+}
+
+.calculator .value{
+    font-family: 'Oswald', sans-serif;
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background: #ffffff;
+    box-shadow: inset 6px 6px 8px #666666, 
+            inset -6px -6px 8px #ffffff;
+
+}
+
+.calculator span{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: #1B2631;
+    box-shadow: inset 6px 6px 8px #0b0f14, 
+            inset -6px -6px 8px #2b3d4e;
+    place-items: center;
+    border-radius: 10px;
+    margin: 3px;
+    
+}
+
+.calculator span:active{
+    background-color: #1B2631;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .1s ease-in;
+}
+
+.calculator span.clear{
+    grid-column: span 2;
+    width: 120px;
+    background: #E74C3C;
+    box-shadow: inset 6px 6px 8px #5c1e18, 
+            inset -6px -6px 8px #ff7a60;
+}
+
+.calculator span.clear:active{
+    background-color: #E74C3C;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .1s ease-in;
+}
+
+.calculator span.plus{
+    grid-row: span 2;
+    height: 120px;
+}
+
+.calculator span.equal{
+    background: #3498DB;
+box-shadow: inset 6px 6px 8px #153d58, 
+            inset -6px -6px 8px #53f3ff;
+    color: #fff;
+
+}
+
+.calculator span.equal:active{
+    background-color: #3498DB;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .1s ease-in;
+}
